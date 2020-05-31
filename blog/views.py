@@ -62,7 +62,7 @@ class DraftListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         # only show unpublished posts
         return Post.objects.filter(
-            published_date__isnull=True).order_by('-created_date')
+            published_date__isnull=True).order_by('-create_date')
 
 
 @login_required

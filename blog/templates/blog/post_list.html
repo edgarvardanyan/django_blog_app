@@ -5,11 +5,12 @@
     {% for post in post_list %}
         <div class='post'>
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+            <p><html>{{post.text|truncatechars_html:200|safe}}</html></p>
         </div>
         <div class='date'>
             <p>Published on: {{post.published|date:"D M Y"}}</p>
         </div>
-        <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approved_comments().count()}}</a>
+        <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{post.approved_comments.count}}</a>
     {% endfor %}
 </div>
 {% endblock %}
