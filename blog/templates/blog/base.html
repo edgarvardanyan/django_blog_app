@@ -54,7 +54,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
             </li>
-            <li>
+            <li class='nav-item active nav-link'>
                 Welcome: {{ user.username }}
             </li>
             {% else %}
@@ -67,10 +67,14 @@
     </nav>
 
     <!-- Content -->
-    <div class='container content'>
-        {% block content %}
+    <div class='container'>
+        <div class='jumbotron'>
+            <div class='content'>
+                {% block content %}
 
-        {% endblock %}
+                {% endblock %}
+            </div>
+        </div>
     </div>
 
 </body>

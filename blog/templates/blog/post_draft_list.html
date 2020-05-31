@@ -11,5 +11,7 @@
             </h1>
             <p>{{post.text|truncatechars:200}}</p>
         </div>
+    {% empty %}
+        <h2>Currently you have no drafts</h2>
     {% endfor %}
 {% endblock %}

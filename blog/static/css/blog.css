@@ -2,11 +2,9 @@
    and customized for this website */
 
 h1{
+    text-align: center;
     font-family: Oak,sans-serif;
     color: rgba(0,0,0,0.7);
-    position:relative;
-    top:calc(50% - 80px);
-    left:calc(50% - 130px);
 }
 
 
@@ -80,6 +78,10 @@ h1{
 }
 
 .btn-comment{
-    position: absolute;
-    right: 0px;
+    position: relative;
+    left: 2%;
+}
+
+.comment{
+    border: 1px solid;
 }
