@@ -63,3 +63,23 @@ h1{
 .centerstage{
     margin: auto;
 }
+
+.postdate{
+    text-align: center;
+}
+
+.posttitle{
+    text-align: 'center';
+    font-family: 'Russo One', sans-serif;
+    font-size: 3em;
+}
+
+.postcontent{
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+}
+
+.btn-comment{
+    position: absolute;
+    right: 0px;
+}
